@@ -283,7 +283,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Game_Coin_atlas_.png?1639715484508", id:"Game_Coin_atlas_"}
+		{src:"images/Game_Coin_atlas_.png?1639715647354", id:"Game_Coin_atlas_"}
 	],
 	preloads: []
 };
