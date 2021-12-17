@@ -240,11 +240,11 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.m_Coin4.parent = this;
 	this.m_Coin4.setTransform(165.9,512.15,2.3542,2.3542,0,0,0,0.8,-11.3);
 
-	this.text_CoinNum = new cjs.Text("2244", "bold 33px 'Noto Sans CJK TC Black'");
+	this.text_CoinNum = new cjs.Text("0000", "bold 33px 'Noto Sans CJK TC Black'");
 	this.text_CoinNum.name = "text_CoinNum";
 	this.text_CoinNum.lineHeight = 51;
 	this.text_CoinNum.parent = this;
-	this.text_CoinNum.setTransform(133.2,18.75);
+	this.text_CoinNum.setTransform(126.15,28.75);
 
 	this.instance = new lib.CachedTexturedBitmap_15();
 	this.instance.parent = this;
@@ -272,7 +272,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Game_Coin_atlas_.png?1639711989506", id:"Game_Coin_atlas_"}
+		{src:"images/Game_Coin_atlas_.png?1639712294855", id:"Game_Coin_atlas_"}
 	],
 	preloads: []
 };
