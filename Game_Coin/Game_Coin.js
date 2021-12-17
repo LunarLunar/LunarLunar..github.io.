@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Game_Coin_atlas_", frames: [[607,0,197,106],[0,0,605,234],[806,0,35,34]]}
+		{name:"Game_Coin_atlas_", frames: [[0,236,197,106],[199,236,208,67],[0,0,605,234],[409,236,35,34]]}
 ];
 
 
@@ -18,16 +18,23 @@ lib.ssMetadata = [
 
 
 
-(lib.背景素材點陣圖35 = function() {
+(lib.CachedTexturedBitmap_32 = function() {
 	this.initialize(ss["Game_Coin_atlas_"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.點陣圖1 = function() {
+(lib.背景素材點陣圖35 = function() {
 	this.initialize(ss["Game_Coin_atlas_"]);
 	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.點陣圖1 = function() {
+	this.initialize(ss["Game_Coin_atlas_"]);
+	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -220,6 +227,10 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// 圖層_1
+	this.instance = new lib.CachedTexturedBitmap_32();
+	this.instance.parent = this;
+	this.instance.setTransform(427.75,16.75,0.5,0.5);
+
 	this.m_Coin1 = new lib.moneyType1();
 	this.m_Coin1.name = "m_Coin1";
 	this.m_Coin1.parent = this;
@@ -246,23 +257,23 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.text_CoinNum.parent = this;
 	this.text_CoinNum.setTransform(126.15,28.75);
 
-	this.instance = new lib.CachedTexturedBitmap_15();
-	this.instance.parent = this;
-	this.instance.setTransform(22.6,16.75,0.5,0.5);
+	this.instance_1 = new lib.CachedTexturedBitmap_15();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(22.6,16.75,0.5,0.5);
 
 	this.m_Coin2 = new lib.moneyType1();
 	this.m_Coin2.name = "m_Coin2";
 	this.m_Coin2.parent = this;
 	this.m_Coin2.setTransform(97.95,138.2,2.3542,2.3542,0,0,0,0.8,-11.3);
 
-	this.instance_1 = new lib.背景素材11();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(0,5.8,0.8926,4.1033);
+	this.instance_2 = new lib.背景素材11();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(0,0,0.8926,4.1026);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.m_Coin2},{t:this.instance},{t:this.text_CoinNum},{t:this.m_Coin4},{t:this.m_Coin3},{t:this.m_Coin5},{t:this.m_Coin1}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.m_Coin2},{t:this.instance_1},{t:this.text_CoinNum},{t:this.m_Coin4},{t:this.m_Coin3},{t:this.m_Coin5},{t:this.m_Coin1},{t:this.instance}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(270,485.8,270,480.2);
+p.nominalBounds = new cjs.Rectangle(270,480,270,480);
 // library properties:
 lib.properties = {
 	id: '1BD6BF542DF2164C9FE465738C69C631',
@@ -272,7 +283,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Game_Coin_atlas_.png?1639715220643", id:"Game_Coin_atlas_"}
+		{src:"images/Game_Coin_atlas_.png?1639715484508", id:"Game_Coin_atlas_"}
 	],
 	preloads: []
 };
