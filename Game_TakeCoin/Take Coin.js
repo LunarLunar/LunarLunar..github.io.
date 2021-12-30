@@ -4,7 +4,8 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"Take Coin_atlas_", frames: [[0,0,1080,1920]]},
-		{name:"Take Coin_atlas_2", frames: [[1082,0,300,500],[0,402,861,116],[0,0,1080,400],[513,520,208,90],[130,573,342,42],[1009,402,46,46],[863,402,144,216],[130,520,381,51],[0,520,128,216]]}
+		{name:"Take Coin_atlas_2", frames: [[0,0,1080,1920],[1082,0,540,960],[1082,962,540,960]]},
+		{name:"Take Coin_atlas_3", frames: [[443,374,282,63],[0,0,635,254],[0,374,441,145],[759,92,224,64],[759,0,208,90],[443,439,342,42],[0,256,861,116],[727,374,120,21],[727,397,26,26],[969,0,46,46],[863,361,96,104],[863,247,144,112],[637,194,381,51],[637,0,120,192],[985,132,16,48],[985,90,24,40],[969,48,40,40]]}
 ];
 
 
@@ -12,72 +13,149 @@ lib.ssMetadata = [
 
 
 
-(lib._50c553eba83e1fc827ab49e442a84680 = function() {
+(lib.a_Cloud_1 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.a_Cloud_2 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.a_Cloud_3 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.a_Cloud_4 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedTexturedBitmap_1 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedTexturedBitmap_11 = function() {
 	this.initialize(ss["Take Coin_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_66 = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
-	this.gotoAndStop(1);
+(lib.CachedTexturedBitmap_2 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_69 = function() {
+(lib.CachedTexturedBitmap_4 = function() {
 	this.initialize(ss["Take Coin_atlas_"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_70 = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
-	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedTexturedBitmap_79 = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
-	this.gotoAndStop(3);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedTexturedBitmap_80 = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
-	this.gotoAndStop(4);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Coin = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
-	this.gotoAndStop(5);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.dada_f = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
+(lib.CachedTexturedBitmap_5 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.DADA_GAMELOGO = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
+(lib.CachedTexturedBitmap_8 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.dada_W = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
+(lib.CachedTexturedBitmap_9 = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
 	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Coin = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.DADA_F_Body = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.DADA_F_Headfw = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.DADA_GAMELOGO = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.DADA_R_Bodyfw = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.DADA_R_Handfw = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.DADA_R_LEGfw = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.DADA_R_TRAILfw = function() {
+	this.initialize(ss["Take Coin_atlas_3"]);
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Landscape_Layer1 = function() {
+	this.initialize(ss["Take Coin_atlas_2"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Landscape_Layer2 = function() {
+	this.initialize(ss["Take Coin_atlas_2"]);
+	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -98,11 +176,108 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
+(lib.補間動畫16 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.DADA_R_Bodyfw();
+	this.instance.parent = this;
+	this.instance.setTransform(60,-96,1,1,0,0,180);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-60,-96,120,192);
+
+
+(lib.補間動畫15 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.DADA_R_Bodyfw();
+	this.instance.parent = this;
+	this.instance.setTransform(60,-96,1,1,0,0,180);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-60,-96,120,192);
+
+
+(lib.補間動畫10 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.DADA_R_Bodyfw();
+	this.instance.parent = this;
+	this.instance.setTransform(-60,-96);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-60,-96,120,192);
+
+
+(lib.補間動畫9 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.DADA_R_Bodyfw();
+	this.instance.parent = this;
+	this.instance.setTransform(-60,-96);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-60,-96,120,192);
+
+
+(lib.補間動畫8 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.DADA_R_Bodyfw();
+	this.instance.parent = this;
+	this.instance.setTransform(-60,-96);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-60,-96,120,192);
+
+
+(lib.補間動畫7 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.DADA_R_Bodyfw();
+	this.instance.parent = this;
+	this.instance.setTransform(-60,-96);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-60,-96,120,192);
+
+
+(lib.Trail = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.DADA_R_TRAILfw();
+	this.instance.parent = this;
+	this.instance.setTransform(-20,-40);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Trail, new cjs.Rectangle(-20,-40,40,40), null);
+
+
 (lib.titleWord = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// 圖層_1
-	this.instance = new lib.CachedTexturedBitmap_66();
+	this.instance = new lib.CachedTexturedBitmap_5();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.5,0.5);
 
@@ -156,36 +331,30 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 p.nominalBounds = new cjs.Rectangle(-81,-87.7,193.8,100);
 
 
-(lib.DADA = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{DADA_F:0,DADA_L:9,DADA_R:19});
-
-	// timeline functions:
-	this.frame_8 = function() {
-		this.gotoAndPlay("DADA_F");
-	}
-	this.frame_18 = function() {
-		this.gotoAndPlay("DADA_L");
-	}
-	this.frame_28 = function() {
-		this.gotoAndPlay("DADA_R");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(8).call(this.frame_8).wait(10).call(this.frame_18).wait(10).call(this.frame_28).wait(1));
+(lib.Leg = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
 
 	// 圖層_1
-	this.instance = new lib.dada_f();
+	this.instance = new lib.DADA_R_LEGfw();
 	this.instance.parent = this;
-	this.instance.setTransform(-14,-110);
+	this.instance.setTransform(-12,-40);
 
-	this.instance_1 = new lib.dada_W();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(-6,-110);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1,p:{skewY:0,x:-6}}]},9).to({state:[{t:this.instance_1,p:{skewY:180,x:122}}]},10).wait(10));
+}).prototype = getMCSymbolPrototype(lib.Leg, new cjs.Rectangle(-12,-40,24,40), null);
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-14,-110,144,216);
+
+(lib.Hand2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.DADA_R_Handfw();
+	this.instance.parent = this;
+	this.instance.setTransform(-8,-48);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Hand2, new cjs.Rectangle(-8,-48,16,48), null);
 
 
 (lib.COIN = function(mode,startPosition,loop) {
@@ -199,6 +368,58 @@ p.nominalBounds = new cjs.Rectangle(-14,-110,144,216);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.COIN, new cjs.Rectangle(-39,-42,78.6,78.6), null);
+
+
+(lib.Cloud_4 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.a_Cloud_4();
+	this.instance.parent = this;
+	this.instance.setTransform(-112,-64);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Cloud_4, new cjs.Rectangle(-112,-64,224,64), null);
+
+
+(lib.Cloud_3 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.a_Cloud_3();
+	this.instance.parent = this;
+	this.instance.setTransform(-145.55,-95.7,0.66,0.66);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Cloud_3, new cjs.Rectangle(-145.5,-95.7,291,95.7), null);
+
+
+(lib.Cloud_2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.a_Cloud_2();
+	this.instance.parent = this;
+	this.instance.setTransform(-199.25,-159.4,0.6276,0.6276);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Cloud_2, new cjs.Rectangle(-199.2,-159.4,398.5,159.4), null);
+
+
+(lib.Cloud_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 圖層_1
+	this.instance = new lib.a_Cloud_1();
+	this.instance.parent = this;
+	this.instance.setTransform(-131.85,-58.9,0.9349,0.9349);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Cloud_1, new cjs.Rectangle(-131.8,-58.9,263.6,58.9), null);
 
 
 (lib.Title = function(mode,startPosition,loop) {
@@ -216,7 +437,7 @@ p.nominalBounds = new cjs.Rectangle(-14,-110,144,216);
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(26,427,1.2955,1.2955);
 
-	this.instance_2 = new lib.CachedTexturedBitmap_69();
+	this.instance_2 = new lib.CachedTexturedBitmap_4();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(0,0,0.5,0.5);
 
@@ -226,6 +447,117 @@ p.nominalBounds = new cjs.Rectangle(-14,-110,144,216);
 p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 
 
+(lib.DADA = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{DADA_F:0,DADA_L:30,DADA_R:60});
+
+	// timeline functions:
+	this.frame_29 = function() {
+		this.gotoAndPlay("DADA_F");
+	}
+	this.frame_59 = function() {
+		this.gotoAndPlay("DADA_L");
+	}
+	this.frame_89 = function() {
+		this.gotoAndPlay("DADA_R");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(29).call(this.frame_29).wait(30).call(this.frame_59).wait(30).call(this.frame_89).wait(1));
+
+	// Hand1
+	this.instance = new lib.Hand2();
+	this.instance.parent = this;
+	this.instance.setTransform(53.6,16.5,1,1,-29.9992,0,0,0,-41.5);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(30).to({_off:false},0).to({regY:-41.4,rotation:0,x:53.65,y:16.55},7).to({regX:0.1,rotation:44.9994,x:53.7,y:16.65},7).to({regX:0,rotation:0,x:53.65,y:16.55},8).to({regY:-41.5,rotation:-29.9992,x:53.6,y:16.5},7).wait(1).to({rotation:0,skewX:29.9992,skewY:-150.0008,x:62.4},0).to({regY:-41.4,skewX:0,skewY:-180,x:62.3},7).to({regY:-41.3,skewX:-44.9994,skewY:-224.9994},6).to({regY:-41.4,skewX:0,skewY:-180},8).to({regY:-41.5,skewX:29.9992,skewY:-150.0008,x:62.4},8).wait(1));
+
+	// Body
+	this.instance_1 = new lib.CachedTexturedBitmap_8();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(26.6,-68.7,0.5,0.5);
+
+	this.instance_2 = new lib.補間動畫7("synched",0);
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(54,-14);
+
+	this.instance_3 = new lib.補間動畫8("synched",0);
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(54,-14);
+
+	this.instance_4 = new lib.CachedTexturedBitmap_9();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(24.4,-69.45,0.5,0.5);
+
+	this.instance_5 = new lib.補間動畫9("synched",0);
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(54,-14);
+
+	this.instance_6 = new lib.補間動畫10("synched",0);
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(54,-14);
+
+	this.instance_7 = new lib.DADA_R_Bodyfw();
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(-6,-110);
+
+	this.instance_8 = new lib.補間動畫15("synched",0);
+	this.instance_8.parent = this;
+	this.instance_8.setTransform(62,-14);
+	this.instance_8._off = true;
+
+	this.instance_9 = new lib.補間動畫16("synched",0);
+	this.instance_9.parent = this;
+	this.instance_9.setTransform(62,-14);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},26).to({state:[]},2).to({state:[{t:this.instance_2}]},2).to({state:[{t:this.instance_3}]},7).to({state:[{t:this.instance_5},{t:this.instance_4}]},7).to({state:[{t:this.instance_6}]},8).to({state:[{t:this.instance_7}]},7).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9}]},29).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(60).to({_off:false},0).to({_off:true},29).wait(1));
+
+	// Hand2
+	this.instance_10 = new lib.Hand2();
+	this.instance_10.parent = this;
+	this.instance_10.setTransform(53.7,16.55,1,1,45,0,0,0.1,-41.5);
+	this.instance_10._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(30).to({_off:false},0).to({rotation:0,y:16.45},7).to({regY:-41.4,rotation:-29.9993},7).to({regY:-41.5,rotation:0},8).to({rotation:45,y:16.55},7).wait(1).to({rotation:0,skewX:-45,skewY:135,x:62.3},0).to({regY:-41.4,skewX:0,skewY:180,x:62.35,y:16.65},7).to({regY:-41.5,scaleX:0.9999,scaleY:0.9999,skewX:44.9994,skewY:224.9994,x:62.45,y:16.6},6).to({regY:-41.4,scaleX:1,scaleY:1,skewX:0,skewY:180,x:62.35,y:16.65},8).to({regY:-41.5,skewX:-45,skewY:135,x:62.3,y:16.55},8).wait(1));
+
+	// Leg1
+	this.instance_11 = new lib.Leg();
+	this.instance_11.parent = this;
+	this.instance_11.setTransform(62.2,65.3,1,1,29.9992,0,0,0.1,-40.1);
+	this.instance_11._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(30).to({_off:false},0).to({regY:-40,rotation:0,x:62.15,y:65.4},7).to({rotation:34.7052,x:62.1},7).to({rotation:0,x:62.15},8).to({regY:-40.1,rotation:29.9992,x:62.2,y:65.3},7).wait(1).to({rotation:0,skewX:-29.9992,skewY:150.0008,x:53.8},0).to({regX:-0.1,regY:-40,skewX:0,skewY:180,x:54.05,y:65.35},7).to({skewX:29.9989,skewY:209.9989,y:65.4},6).to({skewX:0,skewY:180,y:65.35},8).to({regX:0.1,regY:-40.1,skewX:-29.9992,skewY:150.0008,x:53.8,y:65.3},8).wait(1));
+
+	// Leg2
+	this.instance_12 = new lib.Leg();
+	this.instance_12.parent = this;
+	this.instance_12.setTransform(62.05,65.35,1,1,-29.9992,0,0,0,-40);
+	this.instance_12._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(30).to({_off:false},0).to({rotation:0,x:62.1},7).to({regY:-39.9,rotation:-29.9989,x:62.15,y:65.45},7).to({regY:-40,rotation:0,x:62.1,y:65.35},8).to({rotation:-29.9992,x:62.05},7).wait(1).to({rotation:0,skewX:29.9992,skewY:-150.0008,x:53.95},0).to({regY:-39.9,skewX:0,skewY:-180,x:53.9,y:65.45},7).to({regX:0.1,skewX:-29.9989,skewY:-209.9989,x:53.8,y:65.5},6).to({regX:0,skewX:0,skewY:-180,x:53.9,y:65.45},8).to({regY:-40,skewX:29.9992,skewY:-150.0008,x:53.95,y:65.35},8).wait(1));
+
+	// Trail
+	this.instance_13 = new lib.DADA_F_Headfw();
+	this.instance_13.parent = this;
+	this.instance_13.setTransform(-14,-104);
+
+	this.instance_14 = new lib.DADA_F_Body();
+	this.instance_14.parent = this;
+	this.instance_14.setTransform(10,8);
+
+	this.instance_15 = new lib.Trail();
+	this.instance_15.parent = this;
+	this.instance_15.setTransform(88.2,66.8,1,1,0,0,0,-13.8,-31.2);
+	this.instance_15._off = true;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_14},{t:this.instance_13}]}).to({state:[{t:this.instance_15}]},30).to({state:[{t:this.instance_15}]},14).to({state:[{t:this.instance_15}]},15).to({state:[{t:this.instance_15}]},1).to({state:[{t:this.instance_15}]},13).to({state:[{t:this.instance_15}]},16).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(30).to({_off:false},0).to({rotation:-45,x:88.25},14).to({rotation:0,x:88.2},15).wait(1).to({skewY:180,x:27.8},0).to({skewX:74.9998,skewY:254.9998,x:27.7,y:66.85},13).to({skewX:0,skewY:180,x:27.8,y:66.8},16).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-18.1,-110,152.29999999999998,222);
+
+
 // stage content:
 (lib.TakeCoin = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{Start:1,Game:24});
@@ -233,7 +565,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 	// timeline functions:
 	this.frame_0 = function() {
 		//==== GM Mode ======
-		this.gotoAndStop("Game");
+		//this.gotoAndStop("Game");
 		
 		this.stop();
 		
@@ -271,6 +603,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 		var myScore = 0;
 		
 		var coinArray = [this.coin1,this.coin2,this.coin3,this.coin4,this.coin5];
+		var cloudArray = [this.Cloud_1 , this.Cloud_2 , this.Cloud_3 , this.Cloud_4];
 		
 		this.coin1.speed = Math.random() * 5 +10;
 		this.coin2.speed = Math.random() * 15 +10;
@@ -279,6 +612,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 		this.coin5.speed = Math.random() * 20 +10;
 		
 		
+		this.Cloud_1.speed = Math.random() * 5 + 3;
+		this.Cloud_2.speed = Math.random() * 5 + 3;
+		this.Cloud_3.speed = Math.random() * 5 + 3;
+		this.Cloud_4.speed = Math.random() * 5 + 3;
 		
 		
 		this.stage.addEventListener("tick", stageMO_Handler.bind(this));
@@ -323,9 +660,28 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 				
 			}
 			
-			//==== GM 測試用 ===============
+			
+		    //==== GM 測試用 ===============
 			var xx = this.DADA_mc.currentFrame;
 			this.GM_Text1.text = xx;
+		
+			
+			//==== 雲 ===============
+			for( i = 0 ; i < cloudArray.length ; i++){
+				cloudArray[i].x += cloudArray[i].speed;
+				
+				if(cloudArray[i].x >= 750)
+				{
+					cloudArray[i].x = -200;
+					cloudArray[i].y = Math.random() * 450 + 70;
+					
+					cloudArray[i].speed = Math.random() * 5 + 3;
+				}
+			}
+			
+			
+			
+		
 			
 			
 			
@@ -342,14 +698,17 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 			var dadaFrameNumber = this.DADA_mc.currentFrame;
 		
 				
-			//1-9   F
-			//10-19 L
-			//20-29 R
+			//1-9   F 1 - 30
+			//10-19 L 31- 60
+			//20-29 R 61- 90
 			var touchPt_Dis = Math.abs( touchPt.x - this.DADA_mc.x);
 			
-			if( touchPt_Dis <= 30)
+			
+			
+			
+			if( touchPt_Dis <= 20)
 			{
-				if(dadaFrameNumber >= 10)
+				if(dadaFrameNumber > 30)
 				{
 					this.DADA_mc.gotoAndPlay("DADA_F");
 				}
@@ -359,14 +718,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 				var direct = touchPt.x - this.DADA_mc.x;
 				if(direct > 0)
 				{
-					if( dadaFrameNumber < 20)
+					if( dadaFrameNumber < 61)
 					{
 						this.DADA_mc.gotoAndPlay("DADA_R");
 					}
 				}
 				else
 				{
-					if(dadaFrameNumber < 10  || dadaFrameNumber >= 20)
+					if(dadaFrameNumber < 31  || dadaFrameNumber > 60)
 					{
 						this.DADA_mc.gotoAndPlay("DADA_L");
 					}
@@ -470,17 +829,17 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 	this.pop_Text = new lib.PopText();
 	this.pop_Text.name = "pop_Text";
 	this.pop_Text.parent = this;
-	this.pop_Text.setTransform(640.45,496.25,1,1,0,0,0,0,-50);
+	this.pop_Text.setTransform(640.45,561.95,1,1,0,0,0,0,-50);
 
 	this.DADA_mc = new lib.DADA();
 	this.DADA_mc.name = "DADA_mc";
 	this.DADA_mc.parent = this;
-	this.DADA_mc.setTransform(285.25,760,1,1,0,0,0,72,108);
+	this.DADA_mc.setTransform(281.05,823.7,1,1,0,0,0,72,108);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.DADA_mc},{t:this.pop_Text}]},24).wait(13));
 
 	// UI
-	this.instance = new lib.CachedTexturedBitmap_79();
+	this.instance = new lib.CachedTexturedBitmap_1();
 	this.instance.parent = this;
 	this.instance.setTransform(7.55,50.45,0.5,0.5);
 
@@ -494,7 +853,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.Score_Text},{t:this.instance}]},24).wait(13));
 
 	// GM_Text
-	this.instance_1 = new lib.CachedTexturedBitmap_80();
+	this.instance_1 = new lib.CachedTexturedBitmap_2();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(18.85,236.1,0.5,0.5);
 
@@ -507,7 +866,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.GM_Text1},{t:this.instance_1}]},24).wait(13));
 
-	// 圖層_1
+	// COIN
 	this.title_mc = new lib.Title();
 	this.title_mc.name = "title_mc";
 	this.title_mc.parent = this;
@@ -531,29 +890,64 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 	this.coin3 = new lib.COIN();
 	this.coin3.name = "coin3";
 	this.coin3.parent = this;
-	this.coin3.setTransform(388.65,65.05,1,1,0,0,0,39.3,39.3);
+	this.coin3.setTransform(388.65,-37.65,1,1,0,0,0,39.3,39.3);
 
 	this.coin2 = new lib.COIN();
 	this.coin2.name = "coin2";
 	this.coin2.parent = this;
-	this.coin2.setTransform(221.35,73.35,1,1,0,0,0,39.3,39.3);
+	this.coin2.setTransform(234.35,-104.25,1,1,0,0,0,39.3,39.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.title_mc}]}).to({state:[{t:this.title_mc}]},1).to({state:[{t:this.title_mc},{t:this.coin2},{t:this.coin3},{t:this.coin1},{t:this.coin5},{t:this.coin4}]},22).wait(14));
 	this.timeline.addTween(cjs.Tween.get(this.title_mc).wait(1).to({alpha:0},22).wait(14));
 
-	// 圖層_3
-	this.instance_2 = new lib._50c553eba83e1fc827ab49e442a84680();
+	// 圖層_4
+	this.instance_2 = new lib.Landscape_Layer1();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(0,0,1.8,1.8);
+	this.instance_2._off = true;
 
-	this.instance_3 = new lib.CachedTexturedBitmap_70();
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},0).wait(36));
+
+	// 圖層_5
+	this.Cloud_1 = new lib.Cloud_1();
+	this.Cloud_1.name = "Cloud_1";
+	this.Cloud_1.parent = this;
+	this.Cloud_1.setTransform(489.7,313.25,1,1,0,0,0,-0.1,-29.4);
+
+	this.Cloud_4 = new lib.Cloud_4();
+	this.Cloud_4.name = "Cloud_4";
+	this.Cloud_4.parent = this;
+	this.Cloud_4.setTransform(59.55,94.35,1,1,0,0,0,0,-32);
+
+	this.Cloud_2 = new lib.Cloud_2();
+	this.Cloud_2.name = "Cloud_2";
+	this.Cloud_2.parent = this;
+	this.Cloud_2.setTransform(-191.7,444.5,1,1,0,0,0,0,-79.7);
+
+	this.Cloud_3 = new lib.Cloud_3();
+	this.Cloud_3.name = "Cloud_3";
+	this.Cloud_3.parent = this;
+	this.Cloud_3.setTransform(-145.6,464.3,1,1,0,0,0,-0.1,-47.9);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.Cloud_3},{t:this.Cloud_2},{t:this.Cloud_4},{t:this.Cloud_1}]},1).wait(36));
+
+	// 圖層_3
+	this.instance_3 = new lib.Landscape_Layer2();
 	this.instance_3.parent = this;
-	this.instance_3.setTransform(0,760,0.5,0.5);
+	this.instance_3.setTransform(0,38,1,0.9604);
+	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_3},{t:this.instance_2}]},1).wait(36));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1).to({_off:false},0).wait(36));
+
+	// 圖層_6
+	this.instance_4 = new lib.CachedTexturedBitmap_11();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(0,0,0.5,0.5);
+	this.instance_4._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1).to({_off:false},0).wait(36));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(270,373.1,483.29999999999995,586.9);
+p.nominalBounds = new cjs.Rectangle(-120.9,294.5,874.1999999999999,665.5);
 // library properties:
 lib.properties = {
 	id: 'E683D3A18C7AD046B29D5487E4F74074',
@@ -563,8 +957,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Take Coin_atlas_.png?1640806014634", id:"Take Coin_atlas_"},
-		{src:"images/Take Coin_atlas_2.png?1640806014634", id:"Take Coin_atlas_2"}
+		{src:"images/Take Coin_atlas_.png?1640899065814", id:"Take Coin_atlas_"},
+		{src:"images/Take Coin_atlas_2.png?1640899065814", id:"Take Coin_atlas_2"},
+		{src:"images/Take Coin_atlas_3.png?1640899065814", id:"Take Coin_atlas_3"}
 	],
 	preloads: []
 };
