@@ -4,7 +4,7 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"Take Coin_atlas_", frames: [[0,0,1080,1920]]},
-		{name:"Take Coin_atlas_2", frames: [[0,0,1080,1920],[1082,0,540,960],[1082,962,540,960]]},
+		{name:"Take Coin_atlas_2", frames: [[0,0,1080,1920],[1082,962,540,960],[1082,0,540,960]]},
 		{name:"Take Coin_atlas_3", frames: [[443,374,282,63],[0,0,635,254],[0,374,441,145],[759,92,224,64],[759,0,208,90],[443,439,342,42],[0,256,861,116],[727,374,120,21],[727,397,26,26],[969,0,46,46],[863,361,96,104],[863,247,144,112],[637,194,381,51],[637,0,120,192],[985,132,16,48],[985,90,24,40],[969,48,40,40]]}
 ];
 
@@ -957,9 +957,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Take Coin_atlas_.png?1640909686556", id:"Take Coin_atlas_"},
-		{src:"images/Take Coin_atlas_2.png?1640909686556", id:"Take Coin_atlas_2"},
-		{src:"images/Take Coin_atlas_3.png?1640909686557", id:"Take Coin_atlas_3"}
+		{src:"images/Take Coin_atlas_.png?1640938897364", id:"Take Coin_atlas_"},
+		{src:"images/Take Coin_atlas_2.png?1640938897364", id:"Take Coin_atlas_2"},
+		{src:"images/Take Coin_atlas_3.png?1640938897364", id:"Take Coin_atlas_3"}
 	],
 	preloads: []
 };
