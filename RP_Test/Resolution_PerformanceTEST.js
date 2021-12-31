@@ -199,7 +199,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Resolution_PerformanceTEST_atlas_.png?1640938330072", id:"Resolution_PerformanceTEST_atlas_"}
+		{src:"images/Resolution_PerformanceTEST_atlas_.png?1640938611816", id:"Resolution_PerformanceTEST_atlas_"}
 	],
 	preloads: []
 };
