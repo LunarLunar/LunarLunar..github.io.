@@ -957,9 +957,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Take Coin_atlas_.png?1640939301848", id:"Take Coin_atlas_"},
-		{src:"images/Take Coin_atlas_2.png?1640939301848", id:"Take Coin_atlas_2"},
-		{src:"images/Take Coin_atlas_3.png?1640939301849", id:"Take Coin_atlas_3"}
+		{src:"images/Take Coin_atlas_.png?1640941952483", id:"Take Coin_atlas_"},
+		{src:"images/Take Coin_atlas_2.png?1640941952483", id:"Take Coin_atlas_2"},
+		{src:"images/Take Coin_atlas_3.png?1640941952483", id:"Take Coin_atlas_3"}
 	],
 	preloads: []
 };
