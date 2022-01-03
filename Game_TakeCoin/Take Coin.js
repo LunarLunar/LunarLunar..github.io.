@@ -1,3 +1,5 @@
+
+
 (function (cjs, an) {
 
 var p; // shortcut to reference prototypes
@@ -10,7 +12,6 @@ lib.ssMetadata = [
 
 
 // symbols:
-
 
 
 (lib.a_Cloud_1 = function() {
@@ -1057,3 +1058,11 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 
 })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
 var createjs, AdobeAn;
+
+/*
+var cc = document.querySelector('canvas');
+
+cc.width = window.innerWidth;
+cc.height = window.innerHeight;
+console.log(cc);
+*/
