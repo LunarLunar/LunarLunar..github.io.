@@ -1,17 +1,16 @@
-
-
 (function (cjs, an) {
 
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"Take Coin_atlas_", frames: [[0,0,1080,1920]]},
-		{name:"Take Coin_atlas_2", frames: [[0,0,1080,1920],[1082,0,540,960],[1082,962,540,960]]},
-		{name:"Take Coin_atlas_3", frames: [[443,374,282,63],[0,0,635,254],[0,374,441,145],[759,92,224,64],[759,0,208,90],[443,439,342,42],[0,256,861,116],[727,374,120,21],[727,397,26,26],[969,0,46,46],[863,361,96,104],[863,247,144,112],[637,194,381,51],[637,0,120,192],[985,132,16,48],[985,90,24,40],[969,48,40,40]]}
+		{name:"Take Coin_atlas_2", frames: [[0,0,1080,1920],[1082,962,540,960],[1082,0,540,960]]},
+		{name:"Take Coin_atlas_3", frames: [[443,374,282,63],[0,0,635,254],[0,374,441,145],[759,92,224,64],[759,0,208,90],[443,439,342,42],[727,374,120,21],[727,397,26,26],[0,256,861,116],[969,0,46,46],[863,361,96,104],[863,247,144,112],[637,194,381,51],[637,0,120,192],[985,132,16,48],[985,90,24,40],[969,48,40,40]]}
 ];
 
 
 // symbols:
+
 
 
 (lib.a_Cloud_1 = function() {
@@ -49,13 +48,6 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_11 = function() {
-	this.initialize(ss["Take Coin_atlas_2"]);
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.CachedTexturedBitmap_2 = function() {
 	this.initialize(ss["Take Coin_atlas_3"]);
 	this.gotoAndStop(5);
@@ -63,28 +55,35 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_4 = function() {
+(lib.CachedTexturedBitmap_3 = function() {
 	this.initialize(ss["Take Coin_atlas_"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_5 = function() {
+(lib.CachedTexturedBitmap_4 = function() {
 	this.initialize(ss["Take Coin_atlas_3"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_8 = function() {
+(lib.CachedTexturedBitmap_5 = function() {
 	this.initialize(ss["Take Coin_atlas_3"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_9 = function() {
+(lib.CachedTexturedBitmap_6 = function() {
+	this.initialize(ss["Take Coin_atlas_2"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedTexturedBitmap_7 = function() {
 	this.initialize(ss["Take Coin_atlas_3"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
@@ -278,7 +277,7 @@ p.nominalBounds = new cjs.Rectangle(-60,-96,120,192);
 	this.initialize(mode,startPosition,loop,{});
 
 	// 圖層_1
-	this.instance = new lib.CachedTexturedBitmap_5();
+	this.instance = new lib.CachedTexturedBitmap_7();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.5,0.5);
 
@@ -438,7 +437,7 @@ p.nominalBounds = new cjs.Rectangle(-81,-87.7,193.8,100);
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(26,427,1.2955,1.2955);
 
-	this.instance_2 = new lib.CachedTexturedBitmap_4();
+	this.instance_2 = new lib.CachedTexturedBitmap_6();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(0,0,0.5,0.5);
 
@@ -474,7 +473,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(30).to({_off:false},0).to({regY:-41.4,rotation:0,x:53.65,y:16.55},7).to({regX:0.1,rotation:44.9994,x:53.7,y:16.65},7).to({regX:0,rotation:0,x:53.65,y:16.55},8).to({regY:-41.5,rotation:-29.9992,x:53.6,y:16.5},7).wait(1).to({rotation:0,skewX:29.9992,skewY:-150.0008,x:62.4},0).to({regY:-41.4,skewX:0,skewY:-180,x:62.3},7).to({regY:-41.3,skewX:-44.9994,skewY:-224.9994},6).to({regY:-41.4,skewX:0,skewY:-180},8).to({regY:-41.5,skewX:29.9992,skewY:-150.0008,x:62.4},8).wait(1));
 
 	// Body
-	this.instance_1 = new lib.CachedTexturedBitmap_8();
+	this.instance_1 = new lib.CachedTexturedBitmap_4();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(26.6,-68.7,0.5,0.5);
 
@@ -486,7 +485,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,540,960);
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(54,-14);
 
-	this.instance_4 = new lib.CachedTexturedBitmap_9();
+	this.instance_4 = new lib.CachedTexturedBitmap_5();
 	this.instance_4.parent = this;
 	this.instance_4.setTransform(24.4,-69.45,0.5,0.5);
 
@@ -940,7 +939,7 @@ p.nominalBounds = new cjs.Rectangle(-18.1,-110,152.29999999999998,222);
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1).to({_off:false},0).wait(36));
 
 	// 圖層_6
-	this.instance_4 = new lib.CachedTexturedBitmap_11();
+	this.instance_4 = new lib.CachedTexturedBitmap_3();
 	this.instance_4.parent = this;
 	this.instance_4.setTransform(0,0,0.5,0.5);
 	this.instance_4._off = true;
@@ -958,9 +957,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Take Coin_atlas_.png?1640941952483", id:"Take Coin_atlas_"},
-		{src:"images/Take Coin_atlas_2.png?1640941952483", id:"Take Coin_atlas_2"},
-		{src:"images/Take Coin_atlas_3.png?1640941952483", id:"Take Coin_atlas_3"}
+		{src:"images/Take Coin_atlas_.png?1641227839918", id:"Take Coin_atlas_"},
+		{src:"images/Take Coin_atlas_2.png?1641227839918", id:"Take Coin_atlas_2"},
+		{src:"images/Take Coin_atlas_3.png?1641227839919", id:"Take Coin_atlas_3"}
 	],
 	preloads: []
 };
@@ -1058,11 +1057,3 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 
 })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
 var createjs, AdobeAn;
-
-/*
-var cc = document.querySelector('canvas');
-
-cc.width = window.innerWidth;
-cc.height = window.innerHeight;
-console.log(cc);
-*/
