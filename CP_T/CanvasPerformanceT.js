@@ -933,7 +933,7 @@ an.getComposition = function(id) {
 
 an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
 	var lastW, lastH, lastS=1;		
-	window.addEventListener('resize', resizeCanvas);		
+	//window.addEventListener('resize', resizeCanvas);		
 	//resizeCanvas();		
 	function resizeCanvas() {			
 		var w = lib.properties.width, h = lib.properties.height;			
