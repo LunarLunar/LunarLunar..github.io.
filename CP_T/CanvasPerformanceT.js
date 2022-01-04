@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"CanvasPerformanceT_atlas_", frames: [[122,1365,282,63],[0,962,635,254],[0,1218,441,145],[909,962,224,64],[443,1324,104,45],[549,1358,30,5],[432,1365,7,7],[637,962,270,480],[268,1430,342,42],[541,1218,46,46],[443,1218,96,104],[122,1430,144,112],[0,1365,120,192],[549,1308,16,48],[406,1365,24,40],[541,1266,40,40],[542,0,540,960],[0,0,540,960]]}
+		{name:"CanvasPerformanceT_atlas_", frames: [[122,1365,282,63],[0,962,635,254],[0,1218,441,145],[268,1430,224,64],[491,1366,52,23],[533,1324,86,11],[637,962,270,480],[450,1372,30,5],[406,1407,7,7],[443,1324,46,46],[443,1218,96,104],[122,1430,144,112],[0,1365,120,192],[432,1372,16,48],[406,1365,24,40],[491,1324,40,40],[542,0,540,960],[0,0,540,960]]}
 ];
 
 
@@ -39,35 +39,35 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_24 = function() {
+(lib.CachedTexturedBitmap_1 = function() {
 	this.initialize(ss["CanvasPerformanceT_atlas_"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_75 = function() {
+(lib.CachedTexturedBitmap_2 = function() {
 	this.initialize(ss["CanvasPerformanceT_atlas_"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_76 = function() {
+(lib.CachedTexturedBitmap_3 = function() {
 	this.initialize(ss["CanvasPerformanceT_atlas_"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_78 = function() {
+(lib.CachedTexturedBitmap_4 = function() {
 	this.initialize(ss["CanvasPerformanceT_atlas_"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_9 = function() {
+(lib.CachedTexturedBitmap_5 = function() {
 	this.initialize(ss["CanvasPerformanceT_atlas_"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
@@ -412,7 +412,7 @@ p.nominalBounds = new cjs.Rectangle(-81,-87.7,193.8,100);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(30).to({_off:false},0).to({regY:-41.4,rotation:0,x:54,y:16.6},7).to({regX:0.1,rotation:44.9994,x:53.7,y:16.8},7).to({regX:0,rotation:0,x:54,y:16.6},8).to({regY:-41.5,rotation:-29.9992,x:53.65,y:16.85},7).wait(1).to({rotation:0,skewX:29.9992,skewY:-150.0008,x:62.75},0).to({regY:-41.4,skewX:0,skewY:-180,x:62.4,y:16.6},7).to({regY:-41.3,skewX:-44.9994,skewY:-224.9994,y:16.8},6).to({regY:-41.4,skewX:0,skewY:-180,y:16.6},8).to({regY:-41.5,skewX:29.9992,skewY:-150.0008,x:62.75,y:16.85},8).wait(1));
 
 	// Body
-	this.instance_1 = new lib.CachedTexturedBitmap_75();
+	this.instance_1 = new lib.CachedTexturedBitmap_4();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(26.6,-68.7,2.0002,2.0002);
 
@@ -424,7 +424,7 @@ p.nominalBounds = new cjs.Rectangle(-81,-87.7,193.8,100);
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(54,-14);
 
-	this.instance_4 = new lib.CachedTexturedBitmap_76();
+	this.instance_4 = new lib.CachedTexturedBitmap_5();
 	this.instance_4.parent = this;
 	this.instance_4.setTransform(24.4,-69.3,2.0002,2.0002);
 
@@ -764,9 +764,9 @@ p.nominalBounds = new cjs.Rectangle(-18.1,-110,152.7,222);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.DADA_mc},{t:this.pop_Text}]}).wait(5));
 
 	// UI
-	this.instance = new lib.CachedTexturedBitmap_24();
+	this.instance = new lib.CachedTexturedBitmap_1();
 	this.instance.parent = this;
-	this.instance.setTransform(3.75,25.2,0.5,0.5);
+	this.instance.setTransform(1.85,12.55,0.5,0.5);
 
 	this.Score_Text = new cjs.Text("12564", "70px 'Minecraft'", "#170104");
 	this.Score_Text.name = "Score_Text";
@@ -778,9 +778,9 @@ p.nominalBounds = new cjs.Rectangle(-18.1,-110,152.7,222);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Score_Text},{t:this.instance}]}).wait(5));
 
 	// GM_Text
-	this.instance_1 = new lib.CachedTexturedBitmap_9();
+	this.instance_1 = new lib.CachedTexturedBitmap_2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(18.85,236.1,0.5,0.5);
+	this.instance_1.setTransform(4.65,63.5,0.5,0.5);
 
 	this.GM_Text1 = new cjs.Text("GM_Mode ", "41px 'Minecraft'", "#170104");
 	this.GM_Text1.name = "GM_Text1";
@@ -857,14 +857,14 @@ p.nominalBounds = new cjs.Rectangle(-18.1,-110,152.7,222);
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(5));
 
 	// 圖層_10
-	this.instance_4 = new lib.CachedTexturedBitmap_78();
+	this.instance_4 = new lib.CachedTexturedBitmap_3();
 	this.instance_4.parent = this;
 	this.instance_4.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(5));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-30.2,64.8,220.1,192.3);
+p.nominalBounds = new cjs.Rectangle(-30.2,64.8,218.5,175.7);
 // library properties:
 lib.properties = {
 	id: '6814872E452E42428D0ADF03F9F9D857',
@@ -874,7 +874,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CanvasPerformanceT_atlas_.png?1641231618773", id:"CanvasPerformanceT_atlas_"}
+		{src:"images/CanvasPerformanceT_atlas_.png?1641259864131", id:"CanvasPerformanceT_atlas_"}
 	],
 	preloads: []
 };

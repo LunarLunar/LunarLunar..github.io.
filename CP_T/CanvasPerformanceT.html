@@ -10,20 +10,37 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="authoring-tool" content="Adobe_Animate_CC">
+<!-- <meta name="authoring-tool" content="Adobe_Animate_CC"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+
 <title>CanvasPerformanceT</title>
+
 <!-- write your code here -->
+
 <style>
-  #animation_container, #_preload_div_ {
+/*  #animation_container {
 	position:absolute;
 	margin:auto;
 	left:0;right:0;
 	top:0;bottom:0;
-  }
+  }*/
+
+html {
+    position: relative;
+    min-width: 135px;
+    min-height: 240px;
+    height: 100%;
+}
+
 </style>
+
+
+
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="CanvasPerformanceT.js?1641231618803"></script>
+<script src="CanvasPerformanceT.js?1641259864160"></script>
 <script>
+
+
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
@@ -62,7 +79,7 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'both',true,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(false,'width',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -75,6 +92,6 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:135px; height:240px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:240px; width: 135px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1641231618803 style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:240px; width: 135px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1641259864160 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
