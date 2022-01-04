@@ -15,8 +15,6 @@
 <title>Take Coin</title>
 <!-- write your code here -->
 
-
-
 <style>
 
   #animation_container {
@@ -61,13 +59,13 @@ div{
 
 
 <script language="javascript">
-alert('ver.10.26');
+alert('ver.12.17');
 </script>
 
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="Take Coin.js?1641267404681"></script>
-<script>
 
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="Take Coin.js?1641269722785"></script>
+<script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
@@ -103,7 +101,7 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'width',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(false,'width',false,1,[canvas,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
