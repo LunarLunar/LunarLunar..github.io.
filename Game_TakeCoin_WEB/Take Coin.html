@@ -10,9 +10,54 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="authoring-tool" content="Adobe_Animate_CC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
 <title>Take Coin</title>
 <!-- write your code here -->
+
+
+<style>
+
+  #animation_container {
+	position:relative;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+	width: 100%;
+	height: 100%;
+
+  }
+
+html {
+    position: relative;
+    margin:auto;
+    min-width: 270px;
+    min-height: 480px;
+    width: 100%;
+    height: 100%;
+}
+
+
+canvas{
+	position: relative;
+	margin:auto;
+	min-width: 270px;
+	min-height: 480px;
+	width: 100%;
+	height: 100%;
+}
+
+div{
+	position: relative;
+	margin:auto;
+	min-width: 270px;
+	min-height: 480px;
+	width: 100%;
+	height: 100%;
+}
+
+</style>
+
+
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="Take Coin.js?1641420003730"></script>
 <script>
@@ -63,10 +108,21 @@ function playSound(id, loop) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:540px; height:960px">
-		<canvas id="canvas" width="540" height="960" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:540px; height:960px; position: absolute; left: 0px; top: 0px; display: block;">
-		</div>
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:100%; height:100%">
+		<canvas id="canvas" width="540" height="960" style="position: relative; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<!-- 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:540px; height:960px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div> -->
 	</div>
+
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:100% ; width: 100% ; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1641259864160 style='vertical-align: middle; max-height: 100%'/></div>
+
+	
 </body>
+
+
+
+
+
+
+
 </html>
