@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隨機文字生成器</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
+        #T1, #T2 { font-size: 24px; margin: 20px; padding: 10px; width: 80%; }
+        button { font-size: 18px; padding: 10px 20px; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <h1> Ashley Chinese Book v1.0 </h1><br>
+    <h4>tip : 空白鍵發音</h4>
+
+    <input type="text" id="T2" readonly placeholder="上一個詞語">
+    <br>
+    <input type="text" id="T1" readonly placeholder="當前詞語">
+    <br>
+    <button id="btn1">生成隨機文字</button>
+    <button id="btn2">發音</button>
+
+    <script>
+      const wordList = [
+          ['選擇', 2], ['達人', 1], ['啟動', 1], ['宣導', 1], ['勤勉', 1],
+          ['厲害', 1], ['蝸牛', 1], ['寸步難行', 1], ['駱駝', 12], ['皺眉', 12],
+          ['一艘遊艇', 2], ['擦拭', 2], ['河川', 2], ['缺少', 1], ['貧窮', 2],
+          ['繼承', 1], ['研究', 1], ['走一趟', 3], ['租借設備', 14], ['缽', 1],
+          ['化緣', 2], ['毅力', 1], ['慚愧', 12], ['考慮', 2], ['絆腳', 1],
+          ['潔白', 1], ['甚至', 1], ['環境', 12], ['懶惰', 1], ['梳洗', 1],
+          ['髒污', 1], ['臭腳丫', 1], ['雜物', 1], ['極致', 1], ['調整', 1],
+          ['叢林', 1], ['暢快', 1], ['格子', 1], ['一粒稻米', 234], ['農夫', 1],
+          ['蘿蔔', 12], ['豆漿', 2], ['蒸飯', 1], ['鹹蛋黃', 1], ['財富', 1],
+          ['碗粿', 2], ['艾草', 1], ['粽子', 1], ['推廣', 1], ['飲食', 1],
+          ['戶籍', 2], ['繪製', 1], ['版面', 1], ['介紹', 1], ['哭泣', 2],
+          ['敏感', 1], ['搔癢', 2], ['靈活', 1], ['麥田', 1], ['搓揉', 2],
+          ['封印', 1], ['淺嚐', 1], ['查找', 1], ['酵母', 1], ['稱讚', 2],
+          ['插秧', 1], ['拌飯', 1], ['磚頭', 1], ['激昂', 2], ['頻繁', 2],
+          ['棟樑', 1], ['雅致', 1], ['存檔', 1], ['彎路', 1], ['狹窄', 12],
+          ['井然有序', 1], ['芬芳', 12], ['足跡', 12], ['移動', 1], ['弓箭', 2],
+          ['輸贏', 1], ['按鍵', 2], ['饑荒', 12], ['配置', 1], ['平均', 2],
+          ['遷移', 1], ['邪惡', 2], ['攜帶', 1], ['眨眼', 1], ['棕熊', 1],
+          ['幹道', 1], ['隧道', 1], ['打雷', 2], ['噪音', 1], ['乘車', 1],
+          ['隊長', 1], ['刀刃', 2], ['仿冒必究', 14], ['俯衝', 12], ['禁止', 1],
+          ['僅供參考', 1], ['號碼', 1], ['仍然', 1], ['津津有味', 1], ['嘗試', 12],
+          ['測試', 12], ['簽署', 2], ['費用', 1], ['億萬富翁', 14], ['牽引', 2],
+          ['嚮往', 1], ['催促', 1], ['桃李', 2], ['富豪', 2], ['忽然', 1],
+          ['小瞧', 2], ['沙灘', 2], ['苔癬', 1], ['滾動', 1], ['交際', 2],
+          ['廣泛', 1], ['丈夫', 1], ['旱災', 1], ['能耐', 2], ['消耗', 2],
+          ['遺憾', 12], ['皎潔', 1], ['瘦小', 1], ['嫦娥', 12], ['搗米', 1],
+          ['冰霜', 2], ['輝映', 2], ['勾起', 1], ['浮動', 1], ['盞燈', 1],
+          ['否定', 1], ['舊物', 1], ['眼淚', 2], ['濃霧', 2], ['孤獨', 1],
+          ['乖巧', 1], ['筋斗雲', 12], ['髮箍', 2], ['召喚', 2], ['掀起', 1],
+          ['修行', 1], ['咒語', 1], ['橘子', 1], ['擋路', 1], ['掏出武器', 1],
+          ['齊天大聖', 14], ['砰', 1], ['壓力', 1]
+      ];
+
+        let nowWord = '';
+        let remainingWords = [...wordList];
+
+        function generateRandomWord() {
+            if (remainingWords.length === 0) {
+                document.getElementById('T1').value = "使用完畢";
+                return;
+            }
+
+            const randomIndex = Math.floor(Math.random() * remainingWords.length);
+            const [word, position] = remainingWords[randomIndex];
+            
+            document.getElementById('T2').value = nowWord;
+            nowWord = word;
+            remainingWords.splice(randomIndex, 1);
+
+            let displayWord = '';
+            for (let i = 0; i < word.length; i++) {
+                if (position.toString().includes(i + 1)) {
+                    displayWord += 'X';
+                } else {
+                    displayWord += word[i];
+                }
+            }
+
+            document.getElementById('T1').value = displayWord;
+        }
+
+        function speak() {
+            if (nowWord) {
+                let utterance = new SpeechSynthesisUtterance(nowWord);
+                utterance.lang = 'zh-TW';
+                speechSynthesis.speak(utterance);
+            }
+        }
+
+        document.getElementById('btn1').addEventListener('click', generateRandomWord);
+        document.getElementById('btn2').addEventListener('click', speak);
+
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                event.preventDefault();
+                speak();
+            }
+        });
+
+        generateRandomWord();
+    </script>
+</body>
+</html>
