@@ -1,0 +1,48 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 20px 30px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#howToUse{
+  font-size: 32px; /* 字體大小為 32像素 */
+  font-weight: bold; /* 使用粗體字 */
+  color: rgb(255, 132, 121); /* 文字顏色為藍色 */
+}
+
+/* 調整文字方塊樣式 */
+#wordDisplay, #wordDisplayB {
+  font-size: 32px; /* 字體大小為 32像素 */
+  font-weight: bold; /* 使用粗體字 */
+}
+
+/* 調整文字方塊B顏色 */
+#wordDisplayB {
+  color: rgb(255, 132, 121); /* 文字顏色為藍色 */
+}
+
+
+#leftTextArea,
+#rightTextArea {
+  font-size: 18px; /* 字體大小為 32像素 */
+  font-weight: bold; /* 使用粗體字 */
+  color: rgb(157, 43, 249); /* 文字顏色為藍色 */
+  height: 30vh;
+  overflow-y: auto; 
+}
+
+#rightTextArea {
+  color: rgb(245, 50, 144); /* 文字顏色為藍色 */
+}
+

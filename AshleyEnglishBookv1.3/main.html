@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Random Word Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  
+
+</head>
+<body>
+
+  <br>
+  <h1> Ashley Final Exam Book v1.3</h1>
+  <br>
+
+  <div>
+    道具欄
+    <br>
+    <textarea id="leftTextArea">GET_ITEM</textarea>
+    <textarea id="rightTextArea"></textarea>
+  </div>
+  
+  <div>
+    <span id="wordCount"></span> slime remaining
+  </div>
+
+  <!-- 已存在的文字方塊和按鈕 -->
+  <input type="text" id="wordDisplay" readonly>
+  <button id="generateButton">Generate Word</button>
+
+  <!-- 新增的文字方塊B -->
+  <br>
+  <input type="text" id="wordDisplayB" readonly>
+  <button id="btn_Sound">Sound</button>
+  <button id="btn_Answer">Answer</button>
+  <br>
+  <span id="howToUse">空白鍵發音，數字1給予中文答案 </span>
+  <script src="script.js"></script>
+</body>
+</html>
