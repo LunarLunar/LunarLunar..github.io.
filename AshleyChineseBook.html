@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隨機文字生成器</title>
+    <title>小學五年級 國語 期中考 練習 - 秀朗國小</title>
+    <meta name="description" content="提供小學五年級上學期國語期中考練習題，幫助秀朗國小學生提升學習成效。">
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
         #T1, #T2 { font-size: 24px; margin: 20px; padding: 10px; width: 80%; }
         button { font-size: 18px; padding: 10px 20px; margin: 0 10px; }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "秀朗國小",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "台北市",
+            "addressCountry": "台灣"
+        }
+    }
+    </script>
 </head>
 <body>
 
-    <h1> Ashley Chinese Book v1.0 </h1><br>
-    <h4>tip : 空白鍵發音</h4>
+    <h1>小學五年級國語期中考練習</h1><br>
+    <h4>提示 : 空白鍵發音</h4>
 
     <input type="text" id="T2" readonly placeholder="上一個詞語">
     <br>
@@ -23,8 +36,6 @@
     <button id="btn2">發音</button>
 
     <script>
-
-
       const wordList = [
             ['堅固', 1], ['耐力', 1], ['勞動', 1], ['獨立', 1], ['距離', 1],
             ['刺蝟', 2], ['擁抱', 1], ['繩子', 1], ['牙刷', 2], ['牙膏', 2],
@@ -39,8 +50,8 @@
             ['樸素', 1], ['富有', 1], ['單純', 2], ['公寓', 2], ['超級', 1],
             ['炒飯', 1], ['氣氛', 2], ['年齡', 2], ['智慧', 2], ['例如', 1],
             ['回憶', 2], ['培養', 1], ['憂患', 2],
-            ['神采飛揚', 2], ['媲美', 1], ['訊息', 1], 
-            ['搜尋', 2],['搜索' ,1] ,['劇烈' ,1] ,['螢火蟲' ,1] ,
+            ['神采飛揚', 2], ['媲美', 1], ['訊息', 1],
+            ['搜尋', 2],[ '搜索' ,1] ,['劇烈' ,1] ,['螢火蟲' ,1] ,
             [ '拯救' ,1] ,['干預' ,2] ,['脈搏' ,1] ,
             [ '授予' ,1] ,['違反' ,1] ,['司機' ,1] ,
             [ '利潤' ,2] ,['錯愕' ,2] ,['創業' ,1] ,
@@ -51,7 +62,6 @@
             [ '紡織' ,1] ,['織布' ,1] ,[ '消耗' ,2] ,
             [ '碳排放' ,1],[ '第一屆' ,3],[ '股東' ,1]
         ];
-
 
         let nowWord = '';
         let remainingWords = [...wordList];
