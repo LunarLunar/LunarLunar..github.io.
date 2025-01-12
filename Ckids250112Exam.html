@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英文單字學習系統</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .word-display {
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0;
+            min-height: 40px;
+            font-weight: bold;
+        }
+        .answer-display {
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .status {
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
+        }
+        #startButton {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #2196F3;
+        }
+        #startButton:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">英文單字學習系統</h1>
+        
+        <button id="startButton" onclick="initializeQuiz()">開始測驗</button>
+        
+        <div id="wordDisplay" class="word-display" style="display: none;">
+            準備開始
+        </div>
+
+        <div id="answerDisplay" class="answer-display" style="display: none;">
+            上一題答案：<span id="previousAnswer"></span>
+        </div>
+        
+        <div class="button-group" style="display: none;" id="controlButtons">
+            <button id="speakButton" onclick="speak()">發音</button>
+            <button id="nextButton" onclick="getNextWord()">下一個</button>
+            <button id="hintButton" onclick="showHint()">提示字首</button>
+        </div>
+        
+        <input type="text" id="translation" placeholder="請輸入中文解釋" style="display: none;">
+        
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        // 內建單字列表
+        const builtInWords = `strike fail type reply behave debate entire snail spade waist twine desire flame grave hydrogen deny arrive daily drain style reveal code measles greetings stream steel vote choke coast grease creak throat screen goal coal cocoa squeeze grove lonesome ski scrubbing extended pointed dropped sounding shouting expected spoiled trotting jammed laughing mailed passing swapped wrapped snapping roasting electing reached grabbing bicycle distance sincerely license sense except force peace recite tense service season cozy clumsy chose citizen graze daisy arise closet might could would should ticket deck comics quit ache continue collapse anchor chemical quiet quite occupied inquire shock rocket according question square customer pockle shelves movies addresses bakeries batteries bunches chimneys diaries donkeys groceries highways knives leaves scarves stitches taxes trays valleys wives wolves clamp stamp splint crust prompt shrub dent draft blast thrift blend crunchy block shrunk gust insect traffic slant crank defend checkers challenge storage ginger hinge future culture agent arrange pasture porch capture imagine range furniture fortune nature manage postage peach issue special direction social shelter motion shower pressure action selection shack polish ashamed assure official tissue ancient mention fashion delocious reading seeling visiting winning sell choose export display serve decorating applying delaying employed studying suppose exciting married envied studied lied preying relayed preparing replied doubled noticed promised lying voyage join enjoyable loyalty fountain growl coward doubt county oyster broil soil annoy powder scowl towel couc amount poison avoid booklet hood understood woolen boost chew gloomy shampoo scoop loose proof renew drew prove jewels crew disappove crook smooth canoe knight kneel wreck wrist honor shepherd castle fasten knowledge wrinkle wreath glisten knotty wrestle rustle knob wring knead honest hour allow baggage collect dessert difficult dizzy drizzle jazz juggle kennel mamal message office opposite riddle settlers sheriff squirrel stress stubborn`.split(' ');
+
+        // 全域變數
+        let wordList = [];
+        let remainingWords = [];
+        let currentWord = '';
+        let previousWord = '';
+        let isFirstWord = true;
+
+        // 初始化測驗
+        function initializeQuiz() {
+            wordList = [...builtInWords];
+            remainingWords = [...wordList];
+            document.getElementById('startButton').style.display = 'none';
+            document.getElementById('wordDisplay').style.display = 'block';
+            document.getElementById('controlButtons').style.display = 'flex';
+            document.getElementById('translation').style.display = 'block';
+            getNextWord();
+        }
+
+        // 使用 MyMemory API 進行翻譯
+        async function translateWord(word) {
+            try {
+                const response = await fetch(`https://api.mymemory.translated.net/get?q=${word}&langpair=en|zh-TW`);
+                const data = await response.json();
+                return data.responseData.translatedText;
+            } catch (error) {
+                console.error('翻譯錯誤:', error);
+                return '翻譯失敗';
+            }
+        }
+
+        // 取得下一個單字並翻譯
+        async function getNextWord() {
+            // 如果不是第一個單字，顯示上一個單字的答案
+            if (!isFirstWord) {
+                const answerDisplay = document.getElementById('answerDisplay');
+                document.getElementById('previousAnswer').textContent = `${previousWord} (${await translateWord(previousWord)})`;
+                answerDisplay.style.display = 'block';
+            } else {
+                isFirstWord = false;
+            }
+
+            if (remainingWords.length > 0) {
+                const randomIndex = Math.floor(Math.random() * remainingWords.length);
+                previousWord = currentWord;
+                currentWord = remainingWords[randomIndex];
+                remainingWords.splice(randomIndex, 1);
+                
+                document.getElementById('wordDisplay').textContent = '請輸入英文單字';
+                document.getElementById('translation').value = await translateWord(currentWord);
+                
+                updateStatus();
+            } else {
+                document.getElementById('wordDisplay').textContent = '已完成所有單字！';
+                document.getElementById('answerDisplay').style.display = 'none';
+                document.getElementById('speakButton').disabled = true;
+                document.getElementById('nextButton').disabled = true;
+                document.getElementById('hintButton').disabled = true;
+                document.getElementById('translation').value = '';
+            }
+        }
+
+        // 發音功能
+        function speak() {
+            if (currentWord && currentWord !== '已完成所有單字！') {
+                const utterance = new SpeechSynthesisUtterance(currentWord);
+                utterance.lang = 'en-US';
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        // 顯示提示
+        function showHint() {
+            if (currentWord && currentWord !== '已完成所有單字！') {
+                alert(`字首提示：${currentWord.charAt(0)}`);
+            }
+        }
+
+        // 更新狀態
+        function updateStatus() {
+            document.getElementById('status').textContent = 
+                `剩餘單字數：${remainingWords.length}`;
+        }
+    </script>
+</body>
+</html>
